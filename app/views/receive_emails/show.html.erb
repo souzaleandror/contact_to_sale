@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @receive_email.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @receive_email.phone %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @receive_email.message %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @receive_email.vehicle %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @receive_email.price %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @receive_email.year %>
+</p>
+
+<p>
+  <strong>Link vehicle:</strong>
+  <%= @receive_email.link_vehicle %>
+</p>
+
+<p>
+  <strong>Brand behicle:</strong>
+  <%= @receive_email.brand_behicle %>
+</p>
+
+<p>
+  <strong>Model vehicle:</strong>
+  <%= @receive_email.model_vehicle %>
+</p>
+
+<p>
+  <strong>Kilometer vehicle:</strong>
+  <%= @receive_email.kilometer_vehicle %>
+</p>
+
+<p>
+  <strong>Accessories vehicle:</strong>
+  <%= @receive_email.accessories_vehicle %>
+</p>
+
+<%= link_to 'Edit', edit_receive_email_path(@receive_email) %> |
+<%= link_to 'Back', receive_emails_path %>

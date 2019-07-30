@@ -1,0 +1,72 @@
+<%= form_with(model: receive_email, local: true) do |form| %>
+  <% if receive_email.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(receive_email.errors.count, "error") %> prohibited this receive_email from being saved:</h2>
+
+      <ul>
+      <% receive_email.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_field :message %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vehicle %>
+    <%= form.text_field :vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.text_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link_vehicle %>
+    <%= form.text_field :link_vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand_behicle %>
+    <%= form.text_field :brand_behicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model_vehicle %>
+    <%= form.text_field :model_vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kilometer_vehicle %>
+    <%= form.text_field :kilometer_vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accessories_vehicle %>
+    <%= form.text_field :accessories_vehicle %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

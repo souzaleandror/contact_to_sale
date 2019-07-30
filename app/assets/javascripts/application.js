@@ -11,5 +11,15 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require activestorage
+//= require activestorage 
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+//= require dataTables/jquery.dataTables
 //= require_tree .
+
+$(document).ready(function() {
+	$('#t-receive-emails').DataTable({
+		aaSorting: [ [ 0, 'desc' ] ]
+	});
+});

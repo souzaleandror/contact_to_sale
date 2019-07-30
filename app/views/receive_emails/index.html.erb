@@ -1,0 +1,45 @@
+<h1>Receive Emails</h1>
+
+<table id="t-receive-emails">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Message</th>
+      <th>Vehicle</th>
+      <th>Price</th>
+      <th>Year</th>
+      <th>Link vehicle</th>
+      <th>Brand behicle</th>
+      <th>Model vehicle</th>
+      <th>Kilometer vehicle</th>
+      <th>Accessories vehicle</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @receive_emails.each do |receive_email| %>
+      <tr>
+        <td><%= receive_email.name %></td>
+        <td><%= receive_email.phone %></td>
+        <td><%= receive_email.message %></td>
+        <td><%= receive_email.vehicle %></td>
+        <td><%= receive_email.price %></td>
+        <td><%= receive_email.year %></td>
+        <td><%= receive_email.link_vehicle %></td>
+        <td><%= receive_email.brand_behicle %></td>
+        <td><%= receive_email.model_vehicle %></td>
+        <td><%= receive_email.kilometer_vehicle %></td>
+        <td><%= receive_email.accessories_vehicle %></td>
+        <td><%= link_to 'Show', receive_email %></td>
+        <td><%= link_to 'Edit', edit_receive_email_path(receive_email) %></td>
+        <td><%= link_to 'Destroy', receive_email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Receive Email', new_receive_email_path %>

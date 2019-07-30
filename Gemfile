@@ -30,6 +30,26 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '>= 1.1.0', require: false
+
+gem 'rails_12factor', group: :production
+
+gem 'jquery-rails', '~> 4.3.3'
+gem 'bootstrap', '~> 4.3.1'
+
+# The iconic SVG, font, and CSS toolkit https://fontawesome.com
+gem 'font-awesome-rails'
+
+# jquery-datatables gem for rails
+gem 'jquery-datatables-rails', '~> 3.4.0'
+
+# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord
+gem 'friendly_id'
+
+# Easy file attachment management for ActiveRecord 
+gem "paperclip", "~> 6.0.0"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
