@@ -2,6 +2,7 @@ class CreateReceiveEmails < ActiveRecord::Migration[5.2]
   def change
     create_table :receive_emails do |t|
       t.string :name
+      t.string :email
       t.string :phone
       t.string :message
       t.string :vehicle

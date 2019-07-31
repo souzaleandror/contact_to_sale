@@ -13,6 +13,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Email</th>
       <th>Phone</th>
       <th>Message</th>
       <th>Vehicle</th>
@@ -31,6 +32,7 @@
     <% @receive_emails.each do |receive_email| %>
       <tr>
         <td><%= receive_email.name %></td>
+        <td><%= receive_email.email %></td>
         <td><%= receive_email.phone %></td>
         <td><%= receive_email.message %></td>
         <td><%= receive_email.vehicle %></td>
@@ -52,6 +54,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Email</th>
       <th>Phone</th>
       <th>Message</th>
       <th>Vehicle</th>

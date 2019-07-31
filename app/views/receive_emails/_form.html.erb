@@ -16,8 +16,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control" %>
+        <%= form.label :name %> * :
+        <%= form.text_field :name, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -25,8 +25,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, class: "form-control" %>
+        <%= form.label :email %> * :
+        <%= form.text_field :email, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -34,8 +34,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :message %>
-    <%= form.text_field :message, class: "form-control" %>
+        <%= form.label :phone %> * :
+        <%= form.text_field :phone, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -43,8 +43,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :vehicle %>
-    <%= form.text_field :vehicle, class: "form-control" %>
+        <%= form.label :message %> * :
+        <%= form.text_field :message, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -52,8 +52,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :price %>
-    <%= form.text_field :price, class: "form-control" %>
+        <%= form.label :vehicle %> * :
+        <%= form.text_field :vehicle, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -61,8 +61,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :year %>
-    <%= form.text_field :year, class: "form-control" %>
+        <%= form.label :price %> * :
+        <%= form.text_field :price, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -70,8 +70,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :link_vehicle %>
-    <%= form.text_field :link_vehicle, class: "form-control" %>
+        <%= form.label :year %> * :
+        <%= form.text_field :year, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -79,8 +79,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :brand_vehicle %>
-    <%= form.text_field :brand_vehicle, class: "form-control" %>
+        <%= form.label :link_vehicle %> * :
+        <%= form.text_field :link_vehicle, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -88,8 +88,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :model_vehicle %>
-    <%= form.text_field :model_vehicle, class: "form-control" %>
+        <%= form.label :brand_vehicle %> * :
+        <%= form.text_field :brand_vehicle, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -97,8 +97,8 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :kilometer_vehicle %>
-    <%= form.text_field :kilometer_vehicle, class: "form-control" %>
+        <%= form.label :model_vehicle %> * :
+        <%= form.text_field :model_vehicle, class: "form-control" %>
       </div>    
     </div>
   </div>
@@ -106,14 +106,23 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-    <%= form.label :accessories_vehicle %>
-    <%= form.text_area :accessories_vehicle, class: "form-control" %>
+        <%= form.label :kilometer_vehicle %> * :
+        <%= form.text_field :kilometer_vehicle, class: "form-control" %>
+      </div>    
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= form.label :accessories_vehicle %> * :
+        <%= form.text_area :accessories_vehicle, class: "form-control" %>
       </div>    
     </div>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+        <%= form.submit class: "btn btn-primary" %>
       </div>    
     </div>
   </div>

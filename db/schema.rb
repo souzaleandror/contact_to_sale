@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_07_30_222942) do
 
   create_table "receive_emails", force: :cascade do |t|
     t.string "name"
+    t.string "email"
     t.string "phone"
     t.string "message"
     t.string "vehicle"

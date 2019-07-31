@@ -1,25 +1,14 @@
-<%= form_for "receive_email", url: read_email_path, :html => {:multipart =>true}, method: :post do |f| %>
+<%= form_for "receive_email", url: read_email_path, :html => {:multipart =>true, class: "mt-3"}, method: :post do |f| %>
   <%= f.file_field :file, accept: 'eml' %><br>
   <%= f.submit 'Upload Email', class: "btn btn-info mt-2" %>
 <% end %>
 
-<%= form_with(model: @receive_email, local: true) do |form| %>
-  <% if @receive_email.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@receive_email.errors.count, "error") %> prohibited this @receive_email from being saved:</h2>
-
-      <ul>
-      <% @receive_email.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>    
-  <% end %>
+<%= form_with(model: @receive_email, local: true, :html => {class: "mt-3"}) do |form| %>
 
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :name %>
+        <%= form.label :name %> * :
         <%= form.text_field :name, class: "form-control" %>
       </div>    
     </div>
@@ -28,7 +17,16 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :phone %>
+        <%= form.label :email %> * :
+        <%= form.text_field :email, class: "form-control" %>
+        </div>    
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= form.label :phone %> * :
         <%= form.text_field :phone, class: "form-control" %>
         </div>    
     </div>
@@ -37,7 +35,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :message %>
+        <%= form.label :message %> * :
         <%= form.text_field :message, class: "form-control" %>
         </div>    
     </div>
@@ -46,7 +44,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :vehicle %>
+        <%= form.label :vehicle %> * :
         <%= form.text_field :vehicle, class: "form-control" %>
         </div>    
     </div>
@@ -55,7 +53,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :price %>
+        <%= form.label :price %> * :
         <%= form.text_field :price, class: "form-control" %>
         </div>    
     </div>
@@ -64,7 +62,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :year %>
+        <%= form.label :year %> * :
         <%= form.text_field :year, class: "form-control" %>
         </div>    
     </div>
@@ -73,7 +71,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :link_vehicle %>
+        <%= form.label :link_vehicle %> * :
         <%= form.text_field :link_vehicle, class: "form-control" %>
         </div>    
     </div>
@@ -82,7 +80,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :brand_vehicle %>
+        <%= form.label :brand_vehicle %> * :
         <%= form.text_field :brand_vehicle, class: "form-control" %>
         </div>    
     </div>
@@ -91,7 +89,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :model_vehicle %>
+        <%= form.label :model_vehicle %> * :
         <%= form.text_field :model_vehicle, class: "form-control" %>
         </div>    
     </div>
@@ -100,7 +98,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :kilometer_vehicle %>
+        <%= form.label :kilometer_vehicle %> * :
         <%= form.text_field :kilometer_vehicle, class: "form-control" %>
         </div>    
     </div>
@@ -109,14 +107,14 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <%= form.label :accessories_vehicle %>
+        <%= form.label :accessories_vehicle %> * :
         <%= form.text_area :accessories_vehicle, cols: 40, rows: 15, class: "form-control" %>
         </div>    
     </div>
   </div>
 
   <div class="actions">
-        <%= form.submit "Create Email" %>
+        <%= form.submit "Create Email", class: "btn btn-primary" %>
         </div>    
     </div>
   </div>

@@ -3,50 +3,70 @@ class ReceiveEmailsController < ApplicationController
 
   def read_email
 
+    msg_error = ""
+
     if ((params[:receive_email]) && (params[:receive_email][:file].present?))
 
       file_data = params[:receive_email][:file].read
       
       html_doc = Nokogiri::HTML.parse(file_data)
 
-      @name = html_doc.css('b')[1].next.text.strip
-      @email = html_doc.css('b')[2].next.text.strip
-      @phone = html_doc.css('b')[3].next.text.strip
-      @message = html_doc.css('b')[4].next.next.text.strip
+      if ((file_data.nil?) || (html_doc.nil?))
+        flash[:error] = 'Error read emails file. try again.2'  
+        redirect_to root_path
+      end
 
-      @vehicle = html_doc.css('b')[5].next.text.strip
-      @price = html_doc.css('b')[6].next.text.strip
-      @year = html_doc.css('b')[7].next.text.strip
-      @link_vehicle = html_doc.css('b')[8].next.next.next.text.strip
+      @name = (!html_doc.css('b')[1].nil? ? html_doc.css('b')[1].next.text.strip : "N/A")
+      @email = (!html_doc.css('b')[2].nil? ? html_doc.css('b')[2].next.text.strip : "N/A")
+      @phone = (!html_doc.css('b')[3].nil? ? html_doc.css('b')[3].next.text.strip : "N/A")
+      @message = (!html_doc.css('b')[4].nil? ? html_doc.css('b')[4].next.next.text.strip : "N/A")
+
+      @vehicle = (!html_doc.css('b')[5].nil? ? html_doc.css('b')[5].next.text.strip : "N/A")
+      @price = (!html_doc.css('b')[6].nil? ? html_doc.css('b')[6].next.text.strip : "N/A")
+      @year = (!html_doc.css('b')[7].nil? ? html_doc.css('b')[7].next.text.strip : "N/A")
+      @link_vehicle = (!html_doc.css('b')[8].nil? ? html_doc.css('b')[8].next.next.next.text.strip : "N/A")
 
       @receive_email = ReceiveEmail.new
       @receive_email.name = @name
+      @receive_email.email = @email
       @receive_email.phone = @phone
       @receive_email.message = @message
       @receive_email.vehicle = @vehicle
       @receive_email.price = @price
       @receive_email.year = @year
-      @receive_email.link_vehicle = @link_vehicle.last(-1).gsub("\n","")
+      @receive_email.link_vehicle = (@link_vehicle != 'N/A' ? @link_vehicle.last(-1).gsub("\n","").gsub("\r","") : @link_vehicle)
 
-      if @receive_email.link_vehicle.present? 
+      if ((@receive_email.link_vehicle.present?) && (valid_url?(@receive_email.link_vehicle))) then
+
         doc = HTTParty.get(@receive_email.link_vehicle)
         link_html_doc = Nokogiri::HTML(doc)
-        @brand_vehicle = link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[5].css('p').inner_text.strip
-        @model_vehicle = link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[1].css('p').inner_text.strip
-        @kilometer_vehicle = link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[3].css('p').inner_text.strip
-        @accessories_vehicle = ""
-        link_html_doc.css('.vehicle-accessories').css('.row').css('.col-4').css('p').each do |row|
-          @accessories_vehicle += row.inner_text.to_s + ' / '
-        end
 
+        @brand_vehicle = (!link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[5].nil? ? link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[5].css('p').inner_text.strip : "N/A")
+        @model_vehicle = (!link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[1].nil? ? link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[1].css('p').inner_text.strip : "N/A")
+        @kilometer_vehicle = (!link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[3].nil? ? link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[3].css('p').inner_text.strip : "N/A")
+        @accessories_vehicle = ""
+
+        if !link_html_doc.css('.vehicle-accessories').css('.row').css('.col-4').nil? then 
+          link_html_doc.css('.vehicle-accessories').css('.row').css('.col-4').css('p').each do |row|
+            @accessories_vehicle += row.inner_text.to_s.titleize + ' / '
+          end
+        else 
+          @accessories_vehicle = "N/A"
+        end
         @receive_email.brand_vehicle = @brand_vehicle
         @receive_email.model_vehicle = @model_vehicle
         @receive_email.kilometer_vehicle = @kilometer_vehicle
         @receive_email.accessories_vehicle = @accessories_vehicle
-
+      else 
+        @receive_email.brand_vehicle = @receive_email.model_vehicle = @receive_email.kilometer_vehicle = @receive_email.accessories_vehicle = "N/A"
+        msg_error = 'Error read link vehicle.'
       end
 
-      flash[:notice] = 'Read email was successfully.'
+      if msg_error.empty?
+        flash[:notice] = 'Read email was successfully.'
+      else
+        flash[:error] = msg_error
+      end
 
       respond_to do |format|
         format.html { render :after_read_email }
@@ -132,4 +152,12 @@ class ReceiveEmailsController < ApplicationController
     def receive_email_params
       params.require(:receive_email).permit(:name, :email, :phone, :message, :vehicle, :price, :year, :link_vehicle, :brand_vehicle, :model_vehicle, :kilometer_vehicle, :accessories_vehicle)
     end
+
+    def valid_url?(url)
+      uri = URI.parse(url)
+      uri.is_a?(URI::HTTP) && !uri.host.nil?
+    rescue URI::InvalidURIError
+      false
+    end
+
 end
