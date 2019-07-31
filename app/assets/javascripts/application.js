@@ -19,7 +19,10 @@
 //= require_tree .
 
 $(document).ready(function() {
+
 	$('#t-receive-emails').DataTable({
+		responsive: true,
 		aaSorting: [ [ 0, 'desc' ] ]
 	});
+	
 });

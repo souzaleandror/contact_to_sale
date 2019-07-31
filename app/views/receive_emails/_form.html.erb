@@ -8,65 +8,113 @@
         <li><%= message %></li>
       <% end %>
       </ul>
+        </div>    
     </div>
+  </div>
   <% end %>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :phone %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :message %>
-    <%= form.text_field :message %>
+    <%= form.text_field :message, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :vehicle %>
-    <%= form.text_field :vehicle %>
+    <%= form.text_field :vehicle, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :year %>
-    <%= form.text_field :year %>
+    <%= form.text_field :year, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :link_vehicle %>
-    <%= form.text_field :link_vehicle %>
+    <%= form.text_field :link_vehicle, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :brand_behicle %>
-    <%= form.text_field :brand_behicle %>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+    <%= form.label :brand_vehicle %>
+    <%= form.text_field :brand_vehicle, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :model_vehicle %>
-    <%= form.text_field :model_vehicle %>
+    <%= form.text_field :model_vehicle, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :kilometer_vehicle %>
-    <%= form.text_field :kilometer_vehicle %>
+    <%= form.text_field :kilometer_vehicle, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
-  <div class="field">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
     <%= form.label :accessories_vehicle %>
-    <%= form.text_field :accessories_vehicle %>
+    <%= form.text_area :accessories_vehicle, class: "form-control" %>
+      </div>    
+    </div>
   </div>
 
   <div class="actions">
     <%= form.submit %>
+      </div>    
+    </div>
   </div>
 <% end %>

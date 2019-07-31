@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_07_30_222942) do
     t.string "price"
     t.string "year"
     t.string "link_vehicle"
-    t.string "brand_behicle"
+    t.string "brand_vehicle"
     t.string "model_vehicle"
     t.string "kilometer_vehicle"
     t.string "accessories_vehicle"
