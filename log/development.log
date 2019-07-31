@@ -5505,3 +5505,54 @@ Processing by ReceiveEmailsController#edit as HTML
 Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2019-07-31 02:22:24 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leandrorodrigues/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.8ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:31
+  Rendered receive_emails/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 374ms (Views: 367.2ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 02:22:29 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tA8povw34JqpxsZeW6fdgz4bZ3uyq7z6AIWsLatvMe9eovEpDK/fDUTMO/b62rOlb5g7zL6ZI/xKnxRcJntlIw==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc711b49468 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-87322-gg2v2e.eml>, @original_filename="test_email.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 944ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 02:22:39 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tqy0hJHfA5uYrcijheNoqKFmbgWhlgxN52P/IYpufcEd2pZ4t9DmYNoSoovauOE8wbFDxq0xzd9hzeNCz3tOw==", "receive_email"=>{"name"=>"Teste C2S", "phone"=>"(19) 99999-9999 (Prefere ser contatado via =WhatsApp)", "message"=>"Mensagem de teste", "vehicle"=>"JETTA 1.4 16V TSI =TRENDLINE  TIPTRONIC", "price"=>"R$ 61.990,00", "year"=>"2016/2016", "link_vehicle"=>"https://www.comprecar.com.br/carros-usados/jundia%C3%AD/fit-15-lx-16v-aut-1241418", "brand_vehicle"=>"Honda", "model_vehicle"=>"2017", "kilometer_vehicle"=>"34.909", "accessories_vehicle"=>"ALARME / AR CONDICIONADO / AROS DE LIGA LEVE / AIR BAG / CÂMBIO AUTOMÁTICO / CD PLAYER / DESEMBAÇADOR TRASEIRO / LIMPADOR TRASEIRO / DIREÇÃO HIDRÁULICA / FREIO ABS / RETROVISOR ELÉTRICO / TRAVA ELÉTRICA / VIDRO ELÉTRICO / ÚNICO DONO / AR QUENTE / "}, "commit"=>"Create Email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:91
+  [1m[36mReceiveEmail Create (0.5ms)[0m  [1m[32mINSERT INTO "receive_emails" ("name", "phone", "message", "vehicle", "price", "year", "link_vehicle", "brand_vehicle", "model_vehicle", "kilometer_vehicle", "accessories_vehicle", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Teste C2S"], ["phone", "(19) 99999-9999 (Prefere ser contatado via =WhatsApp)"], ["message", "Mensagem de teste"], ["vehicle", "JETTA 1.4 16V TSI =TRENDLINE  TIPTRONIC"], ["price", "R$ 61.990,00"], ["year", "2016/2016"], ["link_vehicle", "https://www.comprecar.com.br/carros-usados/jundia%C3%AD/fit-15-lx-16v-aut-1241418"], ["brand_vehicle", "Honda"], ["model_vehicle", "2017"], ["kilometer_vehicle", "34.909"], ["accessories_vehicle", "ALARME / AR CONDICIONADO / AROS DE LIGA LEVE / AIR BAG / CÂMBIO AUTOMÁTICO / CD PLAYER / DESEMBAÇADOR TRASEIRO / LIMPADOR TRASEIRO / DIREÇÃO HIDRÁULICA / FREIO ABS / RETROVISOR ELÉTRICO / TRAVA ELÉTRICA / VIDRO ELÉTRICO / ÚNICO DONO / AR QUENTE / "], ["created_at", "2019-07-31 05:22:39.194513"], ["updated_at", "2019-07-31 05:22:39.194513"]]
+  ↳ app/controllers/receive_emails_controller.rb:91
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/receive_emails_controller.rb:91
+Redirected to http://localhost:3000/receive_emails/4
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/receive_emails/4" for ::1 at 2019-07-31 02:22:39 -0300
+Processing by ReceiveEmailsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:128
+  Rendering receive_emails/show.html.erb within layouts/application
+  Rendered receive_emails/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 02:22:41 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.4ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:31
+  Rendered receive_emails/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.4ms)
+
+

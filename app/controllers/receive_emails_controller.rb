@@ -30,9 +30,7 @@ class ReceiveEmailsController < ApplicationController
 
       if @receive_email.link_vehicle.present? 
         doc = HTTParty.get(@receive_email.link_vehicle)
-        #puts doc
         link_html_doc = Nokogiri::HTML(doc)
-        #puts link_html_doc
         @brand_vehicle = link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[5].css('p').inner_text.strip
         @model_vehicle = link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[1].css('p').inner_text.strip
         @kilometer_vehicle = link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[3].css('p').inner_text.strip
