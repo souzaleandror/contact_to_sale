@@ -21,3 +21,17 @@
 a:link {
   text-decoration: none;
 }
+
+.field_with_errors {
+  + br {
+    display: none;
+  }
+
+  label {
+  	float: left;
+  }
+
+  input, select {
+    border: 1px solid red;
+  }
+}

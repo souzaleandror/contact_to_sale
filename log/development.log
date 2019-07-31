@@ -7851,3 +7851,257 @@ Processing by ReceiveEmailsController#index as HTML
 Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2019-07-31 16:00:20 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leandrorodrigues/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.6ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 414ms (Views: 410.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/receive_emails/new" for ::1 at 2019-07-31 16:00:23 -0300
+Processing by ReceiveEmailsController#new as HTML
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (11.1ms)
+  Rendered receive_emails/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 65ms (Views: 49.5ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:00:25 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VZ008yTf6uLyX4/VszfaO3ujnhn8/GaJqDFsr1W7M1YujRD0fOuRY4WGBzfS81pqANwgADJqKfiCpeGYeJ7Ltg==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (6.5ms)
+  Rendered receive_emails/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 50ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:01:14 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VZ008yTf6uLyX4/VszfaO3ujnhn8/GaJqDFsr1W7M1YujRD0fOuRY4WGBzfS81pqANwgADJqKfiCpeGYeJ7Ltg==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (9.9ms)
+  Rendered receive_emails/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 59ms (Views: 53.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:01:17 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VZ008yTf6uLyX4/VszfaO3ujnhn8/GaJqDFsr1W7M1YujRD0fOuRY4WGBzfS81pqANwgADJqKfiCpeGYeJ7Ltg==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (6.3ms)
+  Rendered receive_emails/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 69ms (Views: 63.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:01:20 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.6ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/receive_emails/new" for ::1 at 2019-07-31 16:01:22 -0300
+Processing by ReceiveEmailsController#new as HTML
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (3.9ms)
+  Rendered receive_emails/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:01:23 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sQ4ghd0+YlWhPNnN3zCa31wo1KkbSIq7VPYQu/SiGtHKHgSChQoZ1NblUS++9BqOJ1dqsNXexcp+Yp2M2YfiMQ==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (6.0ms)
+  Rendered receive_emails/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:01:39 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tCHp3zSjToeff/GsyxpNpmOYyKD5vOd/fSjFF2stfwTPMc3YbJc1BuimeU6q3s33GOd2uTcqqA5XvEggRgiH5A==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (38.2ms)
+  Rendered receive_emails/new.html.erb within layouts/application (39.3ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for :name:Symbol):
+    16:   <div class="row">
+    17:     <div class="col-md-3">
+    18:       <div class="form-group">
+    19:         <%= form.label :name + " * : " %>
+    20:         <%= form.text_field :name, class: "form-control" %>
+    21:       </div>    
+    22:     </div>
+  
+app/views/receive_emails/_form.html.erb:19:in `block in _app_views_receive_emails__form_html_erb__4369454338455683947_70213056644020'
+app/views/receive_emails/_form.html.erb:1:in `_app_views_receive_emails__form_html_erb__4369454338455683947_70213056644020'
+app/views/receive_emails/new.html.erb:3:in `_app_views_receive_emails_new_html_erb___4093505422836643709_70213056630200'
+app/controllers/receive_emails_controller.rb:115:in `block (2 levels) in create'
+app/controllers/receive_emails_controller.rb:110:in `create'
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:02:01 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tCHp3zSjToeff/GsyxpNpmOYyKD5vOd/fSjFF2stfwTPMc3YbJc1BuimeU6q3s33GOd2uTcqqA5XvEggRgiH5A==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (6.3ms)
+  Rendered receive_emails/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 51ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:02:12 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZN8deJbfAfpx0k5axWLpltGJz2ZvQaw2kkexdYEdFE6g1hyum8Hhp4ewdsK0Qv3IDmZJFcrScHw3ZPy+yGMsQ==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (5.4ms)
+  Rendered receive_emails/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 77ms (Views: 70.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:02:15 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails/new" for ::1 at 2019-07-31 16:02:16 -0300
+Processing by ReceiveEmailsController#new as HTML
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (5.2ms)
+  Rendered receive_emails/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:02:20 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qXQI524Ksz6CCsfvXwIctgRl9V6fb41IS14XQJTG/krSZCzgNj7Iv/XTTw0+xpznfxpLR1H5wjlhypp3ueMGqg==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (5.7ms)
+  Rendered receive_emails/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 53ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:03:28 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VwD4p4RSn5dHSkpyqfx637mKln0zJsBo7OQkrCm4isAsENyg3GbkFjCTwpDIOPqOwvUoZP2wjxnGcKmbBJ1yIA==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (5.8ms)
+  Rendered receive_emails/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 1571ms (Views: 1564.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:03:47 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VwD4p4RSn5dHSkpyqfx637mKln0zJsBo7OQkrCm4isAsENyg3GbkFjCTwpDIOPqOwvUoZP2wjxnGcKmbBJ1yIA==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (5.6ms)
+  Rendered receive_emails/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 893ms (Views: 886.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:03:50 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VwD4p4RSn5dHSkpyqfx637mKln0zJsBo7OQkrCm4isAsENyg3GbkFjCTwpDIOPqOwvUoZP2wjxnGcKmbBJ1yIA==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (5.8ms)
+  Rendered receive_emails/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 73ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:05:04 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VwD4p4RSn5dHSkpyqfx637mKln0zJsBo7OQkrCm4isAsENyg3GbkFjCTwpDIOPqOwvUoZP2wjxnGcKmbBJ1yIA==", "receive_email"=>{"name"=>"", "email"=>"", "phone"=>"", "message"=>"", "vehicle"=>"", "price"=>"", "year"=>"", "link_vehicle"=>"", "brand_vehicle"=>"", "model_vehicle"=>"", "kilometer_vehicle"=>"", "accessories_vehicle"=>""}, "commit"=>"Create Receive email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (9.4ms)
+  Rendered receive_emails/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 900ms (Views: 892.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 16:05:19 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.4ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 16:05:23 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8f+MpzRKvkqP/xhuFlkEv5j/RVg1E70ulb5Ob5x433qK76igbH7Fy/gmkIx3nYTu44D7QfuF8l+/KsNYsV0nmg==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fb77f2c9280 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-71552-cdhkbc.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1066ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 16:05:28 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bl4lq5L4JzFrhb7MsRLvd1YACq87OzrdeQdvhPiV4md9TgGsysxcsBxcNi7Q1m8mLX+0tvWtdaxTk+Kz1bAahw==", "receive_email"=>{"name"=>"Teste C2S", "email"=>"", "phone"=>"(19) 99999-9999 (Prefere ser contatado via =WhatsApp)", "message"=>"Mensagem de teste", "vehicle"=>"JETTA 1.4 16V TSI =TRENDLINE  TIPTRONIC", "price"=>"R$ 61.990,00", "year"=>"2016/2016", "link_vehicle"=>"https://www.comprecar.com.br/carros-usados/jundia%C3%AD/fit-15-lx-16v-aut-1241418", "brand_vehicle"=>"Honda", "model_vehicle"=>"2017", "kilometer_vehicle"=>"34.909", "accessories_vehicle"=>"Alarme / Ar Condicionado / Aros De Liga Leve / Air Bag / Câmbio Automático / Cd Player / Desembaçador Traseiro / Limpador Traseiro / Direção Hidráulica / Freio Abs / Retrovisor Elétrico / Trava Elétrica / Vidro Elétrico / único Dono / Ar Quente "}, "commit"=>"Create Email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  Rendering receive_emails/new.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (4.5ms)
+  Rendered receive_emails/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 49ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
