@@ -7329,3 +7329,525 @@ Processing by ReceiveEmailsController#index as HTML
 Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2019-07-31 15:06:37 -0300
+  [1m[35m (104.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leandrorodrigues/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (1.1ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (143.5ms)
+Completed 200 OK in 360ms (Views: 293.8ms | ActiveRecord: 50.6ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:06:43 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wTEqsdclHKcxZKa5qs8jqq1nC3X7C8cg+pAtknOLDlUvWXenGKAbDu+1AeMeFucuSkAmRnaRK/57e93uWUlPcQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feeda99f928 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-bhvvcv.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 63730ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:08:30 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pPZxa7ktGyOlivuF7KvUbONM0ZhtMXB5IQUj+OxniKNKnix9dqgcintbXN9YchDoBGv8q+CrnKeg7tOExqXJhw==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feee0049198 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-d7gzrm.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 56121ms (Views: 38.9ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:12:35 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yp3OvBPTBcV2thw+NL60yhAzKBAuBZX0ggnnOPXKEA4k9ZOq3FYCbKhnu2SAZ3BO9xQFI6OfeSoD4hdE3whRKg==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedb50b4d8 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-au5oih.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 63823ms (Views: 120.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:13:53 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WD+uEHdgLsKDhr3vmbeYPHb4UtiA67vlKSv1zkKDcAi2V/MGuOUpa11XGrUtbly4kd9/6w1xVzuowAWyaEExLA==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed9e984d0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1pi722i.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 910ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:15:44 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBT00HMKdRsKKm0vOmr0fa/tP5pvHBTcakUnUaYpbP9ifKnGvI9ystT7ynWOszD5SMoSqeKG+ALrrtctjOst2w==", "commit"=>"Upload Email"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:15:44 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.9ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:15:47 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 827ms (Views: 825.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails" for ::1 at 2019-07-31 15:15:51 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.5ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:16:01 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lm0k/cQQizTgC/MJeGzMeemtYBaQnXtyOHB1pnPQtt14BXnrC5WMnT7aVFPMtQj9DopNJR0Hl6y5m4XaWRL3+Q==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feee004b7e0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-thsjwo.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 906ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:18:19 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R/PCDIaOxY3v+mDiVyEHoSp4jRPkw/rAQXzcxxpJ732pm58aSQvCJDErx7jj+MMlzV+gIGlZFh7Alyy7MIuuWQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feee031bc68 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-12y2mmj.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 960ms (Views: 86.0ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:18:26 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KfpBEh9JQQOSV8cpvsQ1Qn6Y1KjBZ5FumeIjEXUK34XHkhwE0MxGqkyGYHMKHfHGmb/5m0z9fbAYCdNtX8ieoQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedbda4e78 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1rc586e.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 55094ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:20:53 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wqpRS7n7DyOmOVhHMpZighAFRn8czykANSwzemYx0E0swgxddn4Iinjo/x2GT6YG9yJrTJFVxd60x8MGTPORaQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedd6cf330 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-125velh.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 57893ms (Views: 37.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:22:01 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qR9/DgqkYLDs9TR50O0cT8SgV2cmGbrunOWQFQXcnVFHdyIYxSFnGTIkkyNkNNjLI4d6VKuDVjAdDmBpLx7cdQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed9e09aa0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-q3vwxs.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+Completed 500 Internal Server Error in 854ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/receive_emails_controller.rb:50:in `block in read_email'
+app/controllers/receive_emails_controller.rb:49:in `read_email'
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:22:51 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qR9/DgqkYLDs9TR50O0cT8SgV2cmGbrunOWQFQXcnVFHdyIYxSFnGTIkkyNkNNjLI4d6VKuDVjAdDmBpLx7cdQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedc1b8ca8 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-2aqhdl.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+Completed 500 Internal Server Error in 830ms (ActiveRecord: 3.8ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/receive_emails_controller.rb:50:in `block in read_email'
+app/controllers/receive_emails_controller.rb:49:in `read_email'
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:23:32 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qR9/DgqkYLDs9TR50O0cT8SgV2cmGbrunOWQFQXcnVFHdyIYxSFnGTIkkyNkNNjLI4d6VKuDVjAdDmBpLx7cdQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedbbef420 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-67jain.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 803ms (Views: 37.0ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:23:40 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U33upqX/x9GJBDY30NDKlPAXJy9zGwnne+BO3sZCM/K9FbOwanrAeFfVkW1kCQ4QFzAKHP6B5Tn6C76i7IBy1g==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feee0072098 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1wvjppf.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+Started GET "/" for ::1 at 2019-07-31 15:23:43 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.7ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:24:15 -0300
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 56325ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4Su/PDT6tv3ou8s/zcM5CIxD6axj57BPCB7xb3cFnKR7PPqP1btcilzSHZL7shgxRYilTwVch+9y4u5lx5XVg==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedca780c8 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-in3utx>, @original_filename="coringa", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"coringa\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 94ms (Views: 64.4ms | ActiveRecord: 10.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:25:34 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQhoVug6MAQsESnscPlKrbjlpq5O5j+4VTspu2CC0vfzYDVAJ783rfLAjrbEII4pX8KLncN802bU0NnHSkCT0w==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feee0139738 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-rkfj5l.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1029ms (Views: 75.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:25:40 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:25:43 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W5FMzttarJ7TZuvDIDkJSlLUS8oVevNDuWn6972z09a1+RHYFN+rNw23TJmU4M3OtfNm+ZjgH504ggqLl3GS8g==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedb42bd10 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-kdnlwv.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 865ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:25:53 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LlHeVlGkKF8ywUZHg/1odIbIeR2sz5J9kA4E8GkorvHAOYNAniEv9uwQ4R03JKzwYe9ULiFVfqMR5fSMQ+rv1Q==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed923e4c8 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-kw7t1o.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 57631ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:29:02 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 77ms (Views: 72.0ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:29:07 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pHg28kiXv3LgVM34UDkwOzw3KfwTGbuljyo9djEklBpKEGvkhxK42z6FaqLk4PS/2xAEz56DV3sOwc0KG+bVPg==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feee005beb0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1h7jddv.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+Started GET "/" for ::1 at 2019-07-31 15:29:33 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:29:38 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j3ClzgrT+PcGqhvw1rmaWOxau4tj0o4rMczyKioZKzZhGPjYxVb/Xth7vKpiYF7cC32WuO5IYvWwJwJWANtqEg==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedbd5dc08 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-gaq3qw.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1094ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 54870ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:31:28 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBAHeISdSyqZyzhP2iJ1Vt9gzR9JfqauqLlZPk9Ss3DmeFpuSxhMg0canxVu+7HSOEfgLMTkSnApUqlCZZDyVA==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedb46abc8 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-ehmhf9.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 872ms (Views: 54.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:32:43 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHBBEpyC4y/YUgID1BDeQOvNArrqlXPRDmopdtQUMSlSGBwEUwfkhgaDpVlgyRrEDOoviWcPnw+PgdkK/tZwDQ==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedc333970 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-17knjd7.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 918ms (Views: 95.1ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:33:04 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3AQcnJkWNbVn3CeaHoAbVqt6VUVGgNKr/JBoB6fSDMQybEGKVpMyHLkNgMCqWd/STF14dssaPnV9e5h7jRBN4A==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed90df5c8 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-149n7jb.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 927ms (Views: 41.2ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:33:38 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aK0N+mR2slHKZrN5U2fLbwKWaiFHqNWi7dXn2/+ITtyGxVDsq/O1+BS3FCPnvg/r5bFHEsoyOXxsPhen1UoP+A==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed9e483e0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1neer2v.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1932ms (Views: 40.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:34:34 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vM4RF1NgshBPj6lvFcrNVUI17t0KIrmuqrXIOnJtPqZSpkwBnOW1uZFeDjWhEwnRpRLD7oe4VXArXjhGWK9/gg==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed98851b0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-13ap8w8.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 975ms (Views: 40.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2019-07-31 15:34:46 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.4ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:34:49 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"socRozpkD6x6JMkR9uHPmTubo3YkBJK+im+2Y/HOXN5c70y19eEIBaT1bktCOAsd3LyORamefmALhEYf2wwd+g==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feed9217a30 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1czgbo1.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 59518ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:37:52 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"socRozpkD6x6JMkR9uHPmTubo3YkBJK+im+2Y/HOXN5c70y19eEIBaT1bktCOAsd3LyORamefmALhEYf2wwd+g==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedc3d0f40 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-ysgsvu.eml>, @original_filename="error_link_vehicle.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"error_link_vehicle.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+Started GET "/" for ::1 at 2019-07-31 15:38:13 -0300
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 54620ms (Views: 42.3ms | ActiveRecord: 3.6ms)
+
+
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 96ms (Views: 90.6ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:38:51 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eN9iySG+88pFNEQxAsYH0nnxEWzcqTlGfNh/FU1A8PSWtz/f7jv0Y5vl42u2H8NWntY8X1Ez1Zj9M49pZ4Kx0A==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedb409d28 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1gvpaf2.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 963ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:39:06 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eN9iySG+88pFNEQxAsYH0nnxEWzcqTlGfNh/FU1A8PSWtz/f7jv0Y5vl42u2H8NWntY8X1Ez1Zj9M49pZ4Kx0A==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedaa97bf0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1jefl8c.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 1388ms (Views: 561.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:39:23 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eN9iySG+88pFNEQxAsYH0nnxEWzcqTlGfNh/FU1A8PSWtz/f7jv0Y5vl42u2H8NWntY8X1Ez1Zj9M49pZ4Kx0A==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedbf3ee28 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-4dd5dl.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 2714ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:39:52 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eN9iySG+88pFNEQxAsYH0nnxEWzcqTlGfNh/FU1A8PSWtz/f7jv0Y5vl42u2H8NWntY8X1Ez1Zj9M49pZ4Kx0A==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedd5a4e88 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-xetnbw.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 856ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:40:02 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U6Hw2bK6tDZT/i3Jlv5V/nTligW+iyUN06Aeu2hjPj+9ya3PfT+zn40vipMiJ5F6k8KnNjMRydNSS+7HQqF/Gw==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedd75ead0 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-1s8takt.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 927ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails/read_email" for ::1 at 2019-07-31 15:40:20 -0300
+Processing by ReceiveEmailsController#read_email as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wcVDkAN0CZyYv5v6C31RR0lxewoj54sOE4nRfQykv+MvrR6GzPEONUZuPKC/pJXDrlZWOa59Z9CSYiEBJmb+xw==", "receive_email"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00007feedbe85838 @tempfile=#<Tempfile:/var/folders/_s/pxqvtk7n7d3frkvppxdt13c00000gn/T/RackMultipart20190731-63634-12994at.eml>, @original_filename="test_email_right.eml", @content_type="message/rfc822", @headers="Content-Disposition: form-data; name=\"receive_email[file]\"; filename=\"test_email_right.eml\"\r\nContent-Type: message/rfc822\r\n">}, "commit"=>"Upload Email"}
+  Rendering receive_emails/after_read_email.html.erb within layouts/application
+  Rendered receive_emails/after_read_email.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1060ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/receive_emails" for ::1 at 2019-07-31 15:40:32 -0300
+Processing by ReceiveEmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A7F0U2tz7UeI3Riuq/dyzMtFhWhvZMhlo5Mw4V6sIrLt2SlFpPbq7lYMv/QfLrZILGKoW+L+JLsieMCddG5jlg==", "receive_email"=>{"name"=>"Teste C2S", "email"=>"teste@teste.com", "phone"=>"(19) 99999-9999 (Prefere ser contatado via =WhatsApp)", "message"=>"Mensagem de teste", "vehicle"=>"JETTA 1.4 16V TSI =TRENDLINE  TIPTRONIC", "price"=>"R$ 61.990,00", "year"=>"2016/2016", "link_vehicle"=>"https://www.comprecar.com.br/carros-usados/jundia%C3%AD/fit-15-lx-16v-aut-1241418", "brand_vehicle"=>"Honda", "model_vehicle"=>"2017", "kilometer_vehicle"=>"34.909", "accessories_vehicle"=>"Alarme / Ar Condicionado / Aros De Liga Leve / Air Bag / Câmbio Automático / Cd Player / Desembaçador Traseiro / Limpador Traseiro / Direção Hidráulica / Freio Abs / Retrovisor Elétrico / Trava Elétrica / Vidro Elétrico / único Dono / Ar Quente "}, "commit"=>"Create Email"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[36mReceiveEmail Create (3.4ms)[0m  [1m[32mINSERT INTO "receive_emails" ("name", "email", "phone", "message", "vehicle", "price", "year", "link_vehicle", "brand_vehicle", "model_vehicle", "kilometer_vehicle", "accessories_vehicle", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["name", "Teste C2S"], ["email", "teste@teste.com"], ["phone", "(19) 99999-9999 (Prefere ser contatado via =WhatsApp)"], ["message", "Mensagem de teste"], ["vehicle", "JETTA 1.4 16V TSI =TRENDLINE  TIPTRONIC"], ["price", "R$ 61.990,00"], ["year", "2016/2016"], ["link_vehicle", "https://www.comprecar.com.br/carros-usados/jundia%C3%AD/fit-15-lx-16v-aut-1241418"], ["brand_vehicle", "Honda"], ["model_vehicle", "2017"], ["kilometer_vehicle", "34.909"], ["accessories_vehicle", "Alarme / Ar Condicionado / Aros De Liga Leve / Air Bag / Câmbio Automático / Cd Player / Desembaçador Traseiro / Limpador Traseiro / Direção Hidráulica / Freio Abs / Retrovisor Elétrico / Trava Elétrica / Vidro Elétrico / único Dono / Ar Quente "], ["created_at", "2019-07-31 18:40:32.201228"], ["updated_at", "2019-07-31 18:40:32.201228"]]
+  ↳ app/controllers/receive_emails_controller.rb:111
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/receive_emails_controller.rb:111
+Redirected to http://localhost:3000/receive_emails/2
+Completed 302 Found in 8ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/receive_emails/2" for ::1 at 2019-07-31 15:40:32 -0300
+Processing by ReceiveEmailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.4ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/show.html.erb within layouts/application
+  Rendered receive_emails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 37.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/receive_emails/2/edit" for ::1 at 2019-07-31 15:40:54 -0300
+Processing by ReceiveEmailsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/edit.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (4.4ms)
+  Rendered receive_emails/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails/2/edit" for ::1 at 2019-07-31 15:41:32 -0300
+Processing by ReceiveEmailsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/edit.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (4.2ms)
+  Rendered receive_emails/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails/2" for ::1 at 2019-07-31 15:41:38 -0300
+Processing by ReceiveEmailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/show.html.erb within layouts/application
+  Rendered receive_emails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails/2" for ::1 at 2019-07-31 15:41:46 -0300
+Processing by ReceiveEmailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/show.html.erb within layouts/application
+  Rendered receive_emails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails/2/edit" for ::1 at 2019-07-31 15:41:49 -0300
+Processing by ReceiveEmailsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/edit.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (4.3ms)
+  Rendered receive_emails/edit.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/receive_emails/2/edit" for ::1 at 2019-07-31 15:42:06 -0300
+Processing by ReceiveEmailsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/edit.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (4.8ms)
+  Rendered receive_emails/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/receive_emails/2" for ::1 at 2019-07-31 15:42:10 -0300
+Processing by ReceiveEmailsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q2G33LXx+uzhQD2gnEhs+ffVvzBzItukrA+IBTYYSCNFCerKenT9RT+Rmvookah9EPKSA/64N3ot5Hh5HNoJBw==", "receive_email"=>{"name"=>"Teste C2S", "email"=>"teste@teste.com", "phone"=>"(19) 99999-9999 (Prefere ser contatado via =WhatsApp)", "message"=>"Mensagem de teste", "vehicle"=>"JETTA 1.4 16V TSI =TRENDLINE  TIPTRONIC", "price"=>"R$ 61.990,00", "year"=>"2016/2016", "link_vehicle"=>"https://www.comprecar.com.br/carros-usados/jundia%C3%AD/fit-15-lx-16v-aut-1241418", "brand_vehicle"=>"Honda", "model_vehicle"=>"2017", "kilometer_vehicle"=>"34.909", "accessories_vehicle"=>"Alarme / Ar Condicionado / Aros De Liga Leve / Air Bag / Câmbio Automático / Cd Player / Desembaçador Traseiro / Limpador Traseiro / Direção Hidráulica / Freio Abs / Retrovisor Elétrico / Trava Elétrica / Vidro Elétrico / único Dono / Ar Quente "}, "commit"=>"Update Receive email", "id"=>"2"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:125
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/receive_emails_controller.rb:125
+Redirected to http://localhost:3000/receive_emails/2
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/receive_emails/2" for ::1 at 2019-07-31 15:42:10 -0300
+Processing by ReceiveEmailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.1ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/show.html.erb within layouts/application
+  Rendered receive_emails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/receive_emails/2/edit" for ::1 at 2019-07-31 15:42:11 -0300
+Processing by ReceiveEmailsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  Rendering receive_emails/edit.html.erb within layouts/application
+  Rendered receive_emails/_form.html.erb (4.3ms)
+  Rendered receive_emails/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/receive_emails/2" for ::1 at 2019-07-31 15:42:15 -0300
+Processing by ReceiveEmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O/mRj9alaonuyB8ityrzlFzSeZUsnlaE/kg62bPs9UTVkcyZGSBtIDAZuHgD8zcQu/VUpqEEulp/o8qlmS60YA==", "id"=>"2"}
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:138
+  [1m[36mReceiveEmail Destroy (0.2ms)[0m  [1m[31mDELETE FROM "receive_emails" WHERE "receive_emails"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/receive_emails_controller.rb:138
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/receive_emails_controller.rb:138
+Redirected to http://localhost:3000/receive_emails
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/receive_emails" for ::1 at 2019-07-31 15:42:15 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/receive_emails/1" for ::1 at 2019-07-31 15:42:23 -0300
+Processing by ReceiveEmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jcfQwiL0aVpLLdRwHl5TGZiMQWrJ+5pRhxgHiSABdcZjr43U7XFu85X8cyqqh5edf6tsWURhdo8G8/f1CsM04g==", "id"=>"1"}
+  [1m[36mReceiveEmail Load (0.3ms)[0m  [1m[34mSELECT  "receive_emails".* FROM "receive_emails" WHERE "receive_emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/receive_emails_controller.rb:138
+  [1m[36mReceiveEmail Destroy (0.3ms)[0m  [1m[31mDELETE FROM "receive_emails" WHERE "receive_emails"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/receive_emails_controller.rb:138
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/receive_emails_controller.rb:138
+Redirected to http://localhost:3000/receive_emails
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/receive_emails" for ::1 at 2019-07-31 15:42:23 -0300
+Processing by ReceiveEmailsController#index as HTML
+  Rendering receive_emails/index.html.erb within layouts/application
+  [1m[36mReceiveEmail Load (0.2ms)[0m  [1m[34mSELECT "receive_emails".* FROM "receive_emails"[0m
+  ↳ app/views/receive_emails/index.html.erb:32
+  Rendered receive_emails/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+

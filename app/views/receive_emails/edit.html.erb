@@ -3,4 +3,5 @@
 <%= render 'form', receive_email: @receive_email %>
 
 <%= link_to 'Show', @receive_email, class: "btn btn-info mt-3" %> <br>
+<%= link_to 'Destroy', @receive_email, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger mb-1 mt-3" %><br>
 <%= link_to 'Back', receive_emails_path, class: "btn btn-light mt-3" %>

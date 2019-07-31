@@ -12,7 +12,7 @@ class ReceiveEmailsController < ApplicationController
       html_doc = Nokogiri::HTML.parse(file_data)
 
       if ((file_data.nil?) || (html_doc.nil?))
-        flash[:error] = 'Error read emails file. try again.2'  
+        flash[:error] = 'Error read emails file. try again.'  
         redirect_to root_path
       end
 
@@ -46,17 +46,17 @@ class ReceiveEmailsController < ApplicationController
         @kilometer_vehicle = (!link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[3].nil? ? link_html_doc.css('.vehicle-info').css('.row').css('.col-3')[3].css('p').inner_text.strip : "N/A")
         @accessories_vehicle = ""
 
-        if !link_html_doc.css('.vehicle-accessories').css('.row').css('.col-4').nil? then 
+        if (!link_html_doc.css('.vehicle-accessories').css('.row').css('.col-4').nil?) then 
           link_html_doc.css('.vehicle-accessories').css('.row').css('.col-4').css('p').each do |row|
             @accessories_vehicle += row.inner_text.to_s.titleize + ' / '
           end
-        else 
-          @accessories_vehicle = "N/A"
         end
+
         @receive_email.brand_vehicle = @brand_vehicle
         @receive_email.model_vehicle = @model_vehicle
         @receive_email.kilometer_vehicle = @kilometer_vehicle
-        @receive_email.accessories_vehicle = @accessories_vehicle
+        @receive_email.accessories_vehicle = (@accessories_vehicle.empty? ? "N/A" : @accessories_vehicle[0..-3])
+
       else 
         @receive_email.brand_vehicle = @receive_email.model_vehicle = @receive_email.kilometer_vehicle = @receive_email.accessories_vehicle = "N/A"
         msg_error = 'Error read link vehicle.'
